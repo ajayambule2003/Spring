@@ -1,5 +1,7 @@
 package com.controller;
 
+import com.model.Student;
+import com.service.StudentService;
 import java.util.List;
 
 @RequestMapping("/students")
@@ -8,8 +10,8 @@ public class StudentContoller {
 
 	private StudentService service;
 
-	//  http://localhost:8080/StudentApp/students/
-	@GetMapping("/") // @RequestMapping("/") //
+	// http://localhost:8080/StudentApp/students/ 
+	@GetMapping("/") // @RequestMapping("/") 
 	public String openForm() {
 		return "welcome";
 	}
@@ -67,7 +69,7 @@ public class StudentContoller {
 	public StudentService getService() {
 		return service;
 	}
-
+ //
 	@Autowired
 	public void setService(StudentService service) {
 		this.service = service;
