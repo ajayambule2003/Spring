@@ -34,7 +34,7 @@ public class StudentContoller {
 		return "display";
 	}
 
-	// http://localhsot:8080/StudentApp1/students/delete/11
+	//http://localhsot:8080/StudentApp1/students/delete/11
 	@GetMapping("/delete/{id}")
 	public String deleteRecord(@PathVariable("id") int id) {
 		service.deleteStudent(id);
@@ -69,7 +69,7 @@ public class StudentContoller {
 	public StudentService getService() {
 		return service;
 	}
- //
+	
 	@Autowired
 	public void setService(StudentService service) {
 		this.service = service;
