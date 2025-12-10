@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.model.Student;
-import com.service.StudentService;
+import com.service.StudentService; 
 
 @RequestMapping("/students")
 @Controller
